@@ -94,11 +94,7 @@ label {
     background: #e06b6b;
     border: 2px solid #e06b6b;
 }
-.button-danger {
-    color: #fff;
-    background: #e06b6b;
-    border: 2px solid #e06b6b;
-}
+
 .button-success {
     color: #fff;
     background: #4ab94a;
@@ -114,3 +110,31 @@ label {
 .button-sm {
     height: 46px;
 }
+.button-icon::before{
+    content: '';
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-repeat: no-repeat;
+}
+.button-rocket::before{
+    background-image: url(./../image/icon/RocketLaunch.svg);
+
+}
+.button-envelope::before{
+    background-image: url(./../image/icon/EnvelopeSimple.svg);
+
+}
+.button-plus::before{
+    background-image: url(./../image/icon/Plus.svg);
+
+}
+.button-copy::before{
+    background-image: url(./../image/icon/Copy.svg);
+
+}
+.button-user::before{
+    background-image: url(./../image/icon/User.svg);
+
+}
+
