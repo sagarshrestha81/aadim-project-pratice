@@ -77,16 +77,17 @@ nav a{
     gap: 60px;
 
 }
-.trending-collection-header h3{
-    margin-bottom: 10px;
-}
+
 .trending-collection-card-wrapper{
     display: flex;
 gap: 30px;
 justify-content: space-between;
 }
 .trending-collection-card{
-width: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
 }
 .trending-collection-images{
     display: flex;
@@ -119,4 +120,18 @@ width: 100%;
 border-radius: 20px;
 height: 100px;
 object-fit: cover;
+}
+.trending-collection-card-info h5{
+    margin-bottom: 10px;
+}
+.trending-card-avatar-detail{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+.trending-card-avatar-detail img{
+ 
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
 }
