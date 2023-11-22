@@ -1,0 +1,571 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="./../assets/css/component.css" />
+    <link rel="stylesheet" href="./../assets/css/style.css" />
+    <link rel="stylesheet" href="./../assets/css/responsive.css">
+</head>
+
+<body>
+    <div class="container-wrapper">
+        <!-- Header section -->
+        <header>
+            <div class="logo-wrapper">
+                <img src="./../assets/images/logo/logo.svg" alt="logo" />
+                <span class="primary-font">NFT Marketplace</span>
+            </div>
+            <div class="navbar-wrapper" id="navbar-wrapper">
+                <nav>
+                    <a href="#">Marketplace</a>
+                    <a href="#">Rankings</a>
+                    <a href="#">Connect a wallet</a>
+                </nav>
+                <div class="navButton">
+                    <a href="#" class="btn btn-primary btn-icon btn-user"> Sign Up </a>
+                </div>
+            </div>
+            <div class="nav-controller" id="nav-controller" onclick="menu()">
+                <div class="burger-button">
+                    <i class="fas fa-bars"></i>
+                </div>
+                <div class="close-button">
+
+                    <i class="fas fa-times"></i>
+                </div>
+            </div>
+        </header>
+
+        <!-- Hero section -->
+        <section class="hero-banner">
+            <div class="hero-banner-detail">
+                <div class="hero-banner-heading">
+                    <h1>Discover digital art & Collect NFTs</h1>
+                    <p>
+                        NFT marketplace UI created with Anima for Figma. Collect, buy and
+                        sell art from more than 20k NFT artists.
+                    </p>
+                </div>
+                <div class="button-wrapper">
+                    <a href="#" class="btn btn-primary btn-icon btn-rocket">
+                        <span>Get Started</span>
+                    </a>
+                </div>
+                <div class="progress">
+                    <div class="progress-single">
+                        <h4>240k+</h4>
+                        <span>Total Sale</span>
+                    </div>
+                    <div class="progress-single">
+                        <h4>100k+</h4>
+                        <span>Auctions</span>
+                    </div>
+                    <div class="progress-single">
+                        <h4>240k+</h4>
+                        <span>Artists</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-banner-card">
+                <img src="./../assets/images/upload/Image Placeholder.png" alt="Image Placeholder.png" />
+                <div class="card-detail">
+                    <h5 class="secondary-font">Space Walking</h5>
+                    <div class="avatar-detail">
+                        <img src="./../assets/images/avatar/animakid.png" alt="Animakid.png" />
+                        <span>Animakid</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Trending Collection Section -->
+        <section class="trending-collection-wrapper">
+            <div class="trending-collection-header">
+                <h3>Trending Collection</h3>
+                <p>Checkout our weekly updated trending collection.</p>
+            </div>
+
+            <div class="trending-collection-card-wrapper">
+                <div class="trending-collection-card">
+                    <div class="trending-collection-card-image">
+                        <div class="trending-collection-card-image-main">
+                            <img src="../assets/images/upload/dog_photo.png" alt="Dog Photo">
+                        </div>
+                        <div class="trending-collection-card-image-subimage">
+                            <img src="../assets/images/upload/cat_photo.png" alt="Cat Photo">
+                            <img src="../assets/images/upload/beaver_photo.png" alt="Beaver Photo">
+                            <a href="#">
+                                <span>
+                                    <h5>1025+</h5>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="trending-collection-card-text">
+                        <div class="collection-name">
+                            <h5>DSGN Animals</h5>
+                        </div>
+                        <div class="collection-artist">
+                            <div class="collection-artist-avatar">
+                                <img src="../assets/images/avatar/mrfox.png" alt="MrFox">
+                            </div>
+                            <div class="collection-artist-name">
+                                <p>MrFox</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="trending-collection-card">
+                    <div class="trending-collection-card-image">
+                        <div class="trending-collection-card-image-main">
+                            <img src="../assets/images/upload/primary_mushroom.png" alt="Primary Mushroom">
+                        </div>
+                        <div class="trending-collection-card-image-subimage">
+                            <img src="../assets/images/upload/secondary_mushroom_1.png" alt="Secondary Mushroom 1">
+                            <img src="../assets/images/upload/secondary_mushroom_2.png" alt="Secondary Mushroom 2">
+                            <a href="#">
+                                <span>
+                                    <h5>1025+</h5>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="trending-collection-card-text">
+                        <div class="collection-name">
+                            <h5>Magic Mushrooms</h5>
+                        </div>
+                        <div class="collection-artist">
+                            <div class="collection-artist-avatar">
+                                <img src="../assets/images/avatar/shroomie.png" alt="Shroomie">
+                            </div>
+                            <div class="collection-artist-name">
+                                <p>Shroomie</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="trending-collection-card">
+                    <div class="trending-collection-card-image">
+                        <div class="trending-collection-card-image-main">
+                            <img src="../assets/images/upload/disco_machine.png" alt="Disco Machine Primary">
+                        </div>
+                        <div class="trending-collection-card-image-subimage">
+                            <img src="../assets/images/upload/disco_machine_1.png" alt="Disco Machine Secondary 1">
+                            <img src="../assets/images/upload/disco_machine_2.png" alt="Disco Machine Secondary 2">
+                            <a href="#">
+                                <span>
+                                    <h5>1025+</h5>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="trending-collection-card-text">
+                        <div class="collection-name">
+                            <h5>Disco Machines</h5>
+                        </div>
+                        <div class="collection-artist">
+                            <div class="collection-artist-avatar">
+                                <img src="../assets/images/avatar/bekind2robots.png" alt="BeKind2Robots">
+                            </div>
+                            <div class="collection-artist-name">
+                                <p>BeKind2Robots</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Creator Section -->
+        <section class="top-creator-wrapper">
+            <div class="top-creator-header">
+                <div class="top-creator-header-text">
+                    <h3 class="secondary-font">Top Creators</h3>
+                    <p>Checkout Top Rated Creators on the NFT Marketplace</p>
+                </div>
+                <div class="top-creator-button">
+                    <a href="#" class="btn btn-primary btn-outline btn-icon btn-rocket"><span>View Rankings</span></a>
+                </div>
+            </div>
+
+            <div class="top-creator-artist-wrapper">
+                <div class="artist-card">
+                    <div class="artist-image">
+                        <p class="artist-number">1</p>
+                        <img src="../assets/images/avatar/artists/keepitreal.png" alt="Keepitreal">
+                    </div>
+
+                    <div class="artist-info">
+                        <div class="artist-name">
+                            <h5 class="secondary-font">Keepitreal</h5>
+                        </div>
+                        <div class="artist-additional-info">
+                            <p class="caption">Total Sales:</p>
+                            <p class="primary-font">34.53 ETH</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="artist-card">
+                    <div class="artist-image">
+                        <p class="artist-number">2</p>
+                        <img src="../assets/images/avatar/artists/digilab.png" alt="DigiLab">
+                    </div>
+
+                    <div class="artist-info">
+                        <div class="artist-name">
+                            <h5 class="secondary-font">DigiLab</h5>
+                        </div>
+                        <div class="artist-additional-info">
+                            <p class="caption">Total Sales:</p>
+                            <p class="primary-font">34.53 ETH</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="artist-card">
+                    <div class="artist-image">
+                        <p class="artist-number">3</p>
+                        <img src="../assets/images/avatar/artists/gravityone.png" alt="GravityOne">
+                    </div>
+
+                    <div class="artist-info">
+                        <div class="artist-name">
+                            <h5 class="secondary-font">GravityOne</h5>
+                        </div>
+                        <div class="artist-additional-info">
+                            <p class="caption">Total Sales:</p>
+                            <p class="primary-font">34.53 ETH</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="artist-card">
+                    <div class="artist-image">
+                        <p class="artist-number">4</p>
+                        <img src="../assets/images/avatar/artists/juanie.png" alt="Juanie">
+                    </div>
+
+                    <div class="artist-info">
+                        <div class="artist-name">
+                            <h5 class="secondary-font">Juanie</h5>
+                        </div>
+                        <div class="artist-additional-info">
+                            <p class="caption">Total Sales:</p>
+                            <p class="primary-font">34.53 ETH</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="artist-card">
+                    <div class="artist-image">
+                        <p class="artist-number">5</p>
+                        <img src="../assets/images/avatar/artists/bluewhale.png" alt="BlueWhale">
+                    </div>
+
+                    <div class="artist-info">
+                        <div class="artist-name">
+                            <h5 class="secondary-font">BlueWhale</h5>
+                        </div>
+                        <div class="artist-additional-info">
+                            <p class="caption">Total Sales:</p>
+                            <p class="primary-font">34.53 ETH</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="artist-card">
+                    <div class="artist-image">
+                        <p class="artist-number">6</p>
+                        <img src="../assets/images/avatar/artists/mrfox.png" alt="Mr Fox">
+                    </div>
+
+                    <div class="artist-info">
+                        <div class="artist-name">
+                            <h5 class="secondary-font">Mr Fox</h5>
+                        </div>
+                        <div class="artist-additional-info">
+                            <p class="caption">Total Sales:</p>
+                            <p class="primary-font">34.53 ETH</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="artist-card">
+                    <div class="artist-image">
+                        <p class="artist-number">7</p>
+                        <img src="../assets/images/avatar/artists/shroomie.png" alt="Shroomie">
+                    </div>
+
+                    <div class="artist-info">
+                        <div class="artist-name">
+                            <h5 class="secondary-font">Shroomie</h5>
+                        </div>
+                        <div class="artist-additional-info">
+                            <p class="caption">Total Sales:</p>
+                            <p class="primary-font">34.53 ETH</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="artist-card">
+                    <div class="artist-image">
+                        <p class="artist-number">8</p>
+                        <img src="../assets/images/avatar/artists/robotica.png" alt="robotica">
+                    </div>
+
+                    <div class="artist-info">
+                        <div class="artist-name">
+                            <h5 class="secondary-font">Robotica</h5>
+                        </div>
+                        <div class="artist-additional-info">
+                            <p class="caption">Total Sales:</p>
+                            <p class="primary-font">34.53 ETH</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="artist-card">
+                    <div class="artist-image">
+                        <p class="artist-number">9</p>
+                        <img src="../assets/images/avatar/artists/rustyrobot.png" alt="RustyRobot">
+                    </div>
+
+                    <div class="artist-info">
+                        <div class="artist-name">
+                            <h5 class="secondary-font">RustyRobot</h5>
+                        </div>
+                        <div class="artist-additional-info">
+                            <p class="caption">Total Sales:</p>
+                            <p class="primary-font">34.53 ETH</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="artist-card">
+                    <div class="artist-image">
+                        <p class="artist-number">10</p>
+                        <img src="../assets/images/avatar/artists/animakid.png" alt="Animakid">
+                    </div>
+
+                    <div class="artist-info">
+                        <div class="artist-name">
+                            <h5 class="secondary-font">Animakid</h5>
+                        </div>
+                        <div class="artist-additional-info">
+                            <p class="caption">Total Sales:</p>
+                            <p class="primary-font">34.53 ETH</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="artist-card">
+                    <div class="artist-image">
+                        <p class="artist-number">11</p>
+                        <img src="../assets/images/avatar/artists/dotgu.png" alt="Dotgu">
+                    </div>
+
+                    <div class="artist-info">
+                        <div class="artist-name">
+                            <h5 class="secondary-font">Dotgu</h5>
+                        </div>
+                        <div class="artist-additional-info">
+                            <p class="caption">Total Sales:</p>
+                            <p class="primary-font">34.53 ETH</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="artist-card">
+                    <div class="artist-image">
+                        <p class="artist-number">12</p>
+                        <img src="../assets/images/avatar/artists/ghiblier.png" alt="Ghiblier">
+                    </div>
+
+                    <div class="artist-info">
+                        <div class="artist-name">
+                            <h5 class="secondary-font">Ghiblier</h5>
+                        </div>
+                        <div class="artist-additional-info">
+                            <p class="caption">Total Sales:</p>
+                            <p class="primary-font">34.53 ETH</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="categories-wrapper">
+            <div class="categories-header">
+                <h3>Browse Categories</h3>
+            </div>
+            <div class="categories-card-wrapper">
+                <div class="category-card">
+                    <img src="../assets/images/upload/categories/art.png" alt="Art">
+                    <h5 class="secondary-font">Art</h5>
+                </div>
+                <div class="category-card">
+                    <img src="../assets/images/upload/categories/collectibles.png" alt="Collectibles">
+                    <h5 class="secondary-font">Collectibles</h5>
+                </div>
+                <div class="category-card">
+                    <img src="../assets/images/upload/categories/music.png" alt="Music">
+                    <h5 class="secondary-font">Music</h5>
+                </div>
+                <div class="category-card">
+                    <img src="../assets/images/upload/categories/photography.png" alt="Photography">
+                    <h5 class="secondary-font">Photography</h5>
+                </div>
+                <div class="category-card">
+                    <img src="../assets/images/upload/categories/video.png" alt="Video">
+                    <h5 class="secondary-font">Video</h5>
+                </div>
+                <div class="category-card">
+                    <img src="../assets/images/upload/categories/utility.png" alt="Utility">
+                    <h5 class="secondary-font">Utility</h5>
+                </div>
+                <div class="category-card">
+                    <img src="../assets/images/upload/categories/sport.png" alt="Sport">
+                    <h5 class="secondary-font">Sport</h5>
+                </div>
+                <div class="category-card">
+                    <img src="../assets/images/upload/categories/virtual_worlds.png" alt="Virtual Worlds">
+                    <h5 class="secondary-font">Virtual Worlds</h5>
+                </div>
+            </div>
+        </section>
+
+        <!-- Discover Section -->
+        <section class="discover-section-wrapper">
+            <div class="discover-section-header">
+                <div class="discover-section-text">
+                    <h3 class="secondary-font">Discover More NFTs</h3>
+                    <p>Explore new trending NFTs</p>
+                </div>
+                <div class="discover-section-button">
+                    <a href="#" class="btn btn-icon btn-outline btn-eye btn-primary"><span>See All</span></a>
+                </div>
+            </div>
+
+            <div class="discover-section-card-wrapper">
+
+                <div class="discover-section-card">
+                    <img src="../assets/images/upload/discover/distant_galaxy.png" alt="Distant Galaxy">
+                    <div class="discover-section-card-info">
+                        <div class="discover-section-card-artist-info">
+                            <h5>Distant Galaxy</h5>
+                            <div class="discover-section-card-artist-avatar-name">
+                                <img src="../assets/images/avatar/discover/moondancer.png" alt="Moondancer">
+                                <span>
+                                    <p class="primary-font">MoonDancer</p>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="discover-section-card-additional-info">
+                            <div class="additional-info-price">
+                                <p class="caption">Price</p>
+                                <span class="primary-font">1.63 ETH</span>
+                            </div>
+                            <div class="additional-info-highest-bid">
+                                <p class="caption">Highest Bid</p>
+                                <span class="primary-font">0.33 wETH</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="discover-section-card">
+                    <img src="../assets/images/upload/discover/life_on_edera.png" alt="Life On Edena">
+                    <div class="discover-section-card-info">
+                        <div class="discover-section-card-artist-info">
+                            <h5>Distant Galaxy</h5>
+                            <div class="discover-section-card-artist-avatar-name">
+                                <img src="../assets/images/avatar/discover/nebulakid.png" alt="Nebula Kid">
+                                <span>
+                                    <p class="primary-font">Nebula Kid</p>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="discover-section-card-additional-info">
+                            <div class="additional-info-price">
+                                <p class="caption">Price</p>
+                                <span class="primary-font">1.63 ETH</span>
+                            </div>
+                            <div class="additional-info-highest-bid">
+                                <p class="caption">Highest Bid</p>
+                                <span class="primary-font">0.33 wETH</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="discover-section-card">
+                    <img src="../assets/images/upload/discover/astrofiction.png" alt="AstroFiction">
+                    <div class="discover-section-card-info">
+                        <div class="discover-section-card-artist-info">
+                            <h5>Distant Galaxy</h5>
+                            <div class="discover-section-card-artist-avatar-name">
+                                <img src="../assets/images/avatar/discover/spaceone.png" alt="Spaceone">
+                                <span>
+                                    <p class="primary-font">Spaceone</p>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="discover-section-card-additional-info">
+                            <div class="additional-info-price">
+                                <p class="caption">Price</p>
+                                <span class="primary-font">1.63 ETH</span>
+                            </div>
+                            <div class="additional-info-highest-bid">
+                                <p class="caption">Highest Bid</p>
+                                <span class="primary-font">0.33 wETH</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- NFT Hightlight -->
+        <section class="hightlight-section">
+            <div class="highlight-section-wrapper">
+                <div class="highlight-section-art-info">
+                    <div class="highlight-section-artist-card">
+                        <img src="../assets/images/avatar/shroomie.png" alt="Shroomie">
+                        <span>Shroomie</span>
+                    </div>
+                    <h2 class="secondary-font">Magic Mashrooms</h2>
+                    <div class="highlight-section-art-button">
+                        <a class="btn btn-icon btn-eye btn-white" href="#">
+                            <span>See NFT</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="auction-timer-card-wrapper">
+                    <div class="auction-timer-card">
+                        <div class="auction-timer-header">
+                            <caption>Auction ends in:</caption>
+                        </div>
+                        <div class="auction-timer-time">
+                            <div class="auction-timer-time-hour">
+                                <h3>59</h3>
+                                <caption>Hours</caption>
+                            </div>
+                            <h4>:</h4>
+                            <div class="auction-timer-time-minute">
+                                <h3>59</h3>
+                                <caption>Minutes</caption>
+                            </div>
+                            <h4>:</h4>
+                            <div class="auction-timer-time-second">
+                                <h3>59</h3>
+                                <caption>Seconds</caption>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
+        integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./../assets/js/main.js"></script>
+</body>
+
+</html>

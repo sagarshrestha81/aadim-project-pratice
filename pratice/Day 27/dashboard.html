@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    hello <span id="name"></span>
+    <button onclick="logout()">Logout</button>
+    <script>
+         function logout(){
+            sessionStorage.clear();
+            location.href='index.html'
+        }
+        if( sessionStorage.getItem('email')){
+            document.getElementById("name").innerHTML=
+        sessionStorage.getItem('name')
+        }else{
+          logout();  
+        }
+      
+       
+    </script>
+</body>
+</html>

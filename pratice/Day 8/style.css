@@ -1,0 +1,33 @@
+/* *{
+    margin: 0;
+    padding: 0;
+} */
+.first-div{
+    width: 100vw;
+    height: 100vh;
+    background: #ff000069;
+    /* background-image:linear-gradient(to top right,#ff0000,#def43b,#0000ff) ; */
+    background-image: url(./Screenshot_3.png);
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: 100%;
+    background-position: bottom;
+    font-size: 52px;
+    color: #980909;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+/* ul li:last-child{
+    margin-left: 50px;
+} */
+span{
+    display: inline;
+    text-align: center;
+}
