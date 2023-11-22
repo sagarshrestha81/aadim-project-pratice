@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <style>
+        img{
+            transition: all ease 5s;
+/* filter:grayscale(100%); */
+filter:drop-shadow(10px 10px 10px #000000);
+
+        }
+        /* img:hover{
+            transition: all ease 5s;
+            filter: none;
+        } */
+    </style>
+    <script>
+        // setTimeout(()=>{
+        //     alert();
+        // },5000)
+    //     var timer =10;
+
+let nextDate=new Date("Nov 22 2023 10:49:00")
+
+   
+   
+    
+       const interval= setInterval(()=>{
+        let date= new Date();
+        distance=nextDate-date;
+        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        document.getElementById("timer").innerText=
+        days+" days"+ hours+" hours"+minutes+" min"+seconds+" sec";
+        
+           if(distance < 0){
+            clearInterval(interval);
+            // console.log("timeout")
+            document.getElementById("timer").innerText="Happy Birthday";
+           }
+        },1000)
+
+ 
+    </script>
+    <div id="timer">   </div>
+    <!-- <img src="./toppng.com-transparent-human-311x821.png" alt=""> -->
+    
+</body>
+</html>
