@@ -1,20 +1,12 @@
 import logo from './logo.svg';
 import './App.css';
-import { useState } from 'react';
-import Header from './component/header';
-import Banner from './component/banner';
-import TrendingCollection from './component/trendingCollection';
-
-
+import Header from "./component/header"
+import { Fragment } from 'react';
 function App() {
   return (
-    <div className="content-wrapper">
-     <Header/>
-     <main>
-      <TrendingCollection/>
-      <Banner/>
-      </main>
-    </div>
+    <Fragment>
+<img/>
+    </Fragment>
   );
 }
 
